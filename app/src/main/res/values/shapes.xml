@@ -1,0 +1,39 @@
+<resources>
+
+  <style name="ShapeAppearanceOverlay.Example.TopLeft" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeTopLeft">100%</item>
+  </style>
+
+  <style name="ShapeAppearanceOverlay.Example.TopRight" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeTopRight">100%</item>
+  </style>
+
+  <style name="ShapeAppearanceOverlay.Example.BottomLeft" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeBottomLeft">100%</item>
+  </style>
+
+  <style name="ShapeAppearanceOverlay.Example.BottomRight" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeBottomRight">100%</item>
+  </style>
+
+  <style name="ShapeAppearanceOverlay.Example.Left" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeTopLeft">50%</item>
+    <item name="cornerSizeBottomLeft">50%</item>
+  </style>
+
+  <style name="ShapeAppearanceOverlay.Example.Right" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeTopRight">50%</item>
+    <item name="cornerSizeBottomRight">50%</item>
+  </style>
+
+  <style name="ShapeAppearanceOverlay.Example.PILL" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">50%</item>
+  </style>
+</resources>
