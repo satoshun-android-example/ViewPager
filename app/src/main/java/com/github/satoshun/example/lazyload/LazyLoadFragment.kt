@@ -19,7 +19,10 @@ class LazyLoadFragment : Fragment(R.layout.lazy_load_frag) {
 
 class LazyLoadFragmentAdapter(
   fragment: Fragment
-) : FragmentStatePagerAdapter(fragment.childFragmentManager) {
+) : FragmentStatePagerAdapter(
+  fragment.childFragmentManager
+//  BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
+) {
   override fun getCount(): Int = 5
 
   override fun getItem(position: Int): Fragment =
@@ -28,17 +31,33 @@ class LazyLoadFragmentAdapter(
 }
 
 class Fragment1 : Fragment(R.layout.lazy_load_test_frag) {
+  private val TAG = "Fragment1"
+
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
 
-    println("LAZYLOAD Fragment1")
+    println("LAZYLOAD ViewCreated $TAG")
+  }
+
+  override fun onResume() {
+    super.onResume()
+
+    println("LAZYLOAD onResume $TAG")
   }
 }
 
 class Fragment2 : Fragment(R.layout.lazy_load_test_frag) {
+  private val TAG = "Fragment2"
+
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
 
-    println("LAZYLOAD Fragment2")
+    println("LAZYLOAD ViewCreated $TAG")
+  }
+
+  override fun onResume() {
+    super.onResume()
+
+    println("LAZYLOAD onResume $TAG")
   }
 }
